@@ -1,0 +1,16 @@
+n = int(input())
+dados = list()
+lista = list()
+for i in range(n):
+    x, y = input().split()
+    x, y = float(x), float(y)
+    if y == 0:
+        lista.append(str('divisao impossivel'))
+    else:
+        lista.append(float(x/y))
+
+for i in lista:
+    if type(i) == float:
+        print(f'{i:.1f}')
+    else:
+        print(f'{i}')
