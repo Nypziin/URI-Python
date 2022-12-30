@@ -1,0 +1,18 @@
+a, b, c = input().split()
+a, b, c = float(a), float(b), float(c)
+lista = [a, b, c]
+lista.sort()
+
+if lista[2] >= lista[0] + lista[1]:
+    print('NAO FORMA TRIANGULO')
+else:
+    if lista[2] ** 2 == lista[0] ** 2 + lista[1] ** 2:
+        print('TRIANGULO RETANGULO')
+    if lista[2] ** 2 > lista[0] ** 2 + lista[1] ** 2:
+        print('TRIANGULO OBTUSANGULO')
+    if lista[2] ** 2 < lista[0] ** 2 + lista[1] ** 2:
+        print('TRIANGULO ACUTANGULO')
+    if a == b == c:
+        print('TRIANGULO EQUILATERO')
+    if a == b and a != c and b != c or a == c and a != b and b != c or b == c and b != a and c != a:
+        print('TRIANGULO ISOSCELES')
