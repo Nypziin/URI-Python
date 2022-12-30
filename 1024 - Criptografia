@@ -1,0 +1,23 @@
+n = int(input())
+
+for x in range(n):
+    texto = input()
+    lista = []
+
+    for y in texto:
+        if y.isalpha():
+            lista.append(chr(ord(y) + 3))
+        else:
+            lista.append(y)
+
+    lista.reverse()
+    novo_texto = ''
+    for z in range(int(len(lista)/2), len(lista)):
+        lista[z] = chr(ord(lista[z]) - 1)
+        
+    novo_texto = ''
+    for i in lista:
+        novo_texto += str(i)
+
+    lista.clear()
+    print(novo_texto)
