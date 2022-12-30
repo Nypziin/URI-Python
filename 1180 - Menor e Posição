@@ -1,0 +1,8 @@
+N = int(input())
+X = list()
+valores = input().split()
+for i in valores:
+    X.append(int(i))
+
+print(f'Menor valor: {min(X)}')
+print(f'Posicao: {X.index(min(X))}')
