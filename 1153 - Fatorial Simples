@@ -1,0 +1,7 @@
+N = int(input())
+i = N
+while i > 1:
+    i -= 1
+    N *= i
+
+print(N)
