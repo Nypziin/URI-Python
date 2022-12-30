@@ -1,0 +1,10 @@
+L = input().split()
+A = int(L[0])
+N = int(L[-1])
+i = Resp = 0
+
+while i < N:
+    Resp += A + i
+    i += 1
+
+print(Resp)
