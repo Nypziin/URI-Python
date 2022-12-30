@@ -1,0 +1,22 @@
+OP = input()
+linha = [], [], [], [], [], [], [], [], [], [], [], []
+for i in range(12):
+    for c in range(12):
+        n = float(input())
+        linha[i].append(n)
+
+soma = 0
+me = 0
+inicio = 5
+final = 7
+for i in range(7, 12):
+    for c in range(inicio, final):
+        soma += linha[i][c]
+        me += 1
+    inicio -= 1
+    final += 1
+
+if OP == 'S':
+    print(f'{soma:.1f}')
+elif OP == 'M':
+    print(f'{soma / me:.1f}')
