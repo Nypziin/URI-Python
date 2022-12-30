@@ -1,0 +1,22 @@
+dados = list()
+lista = list()
+
+while True:
+    a, b = input().split()
+    a, b = int(a), int(b)
+    if a == 0 or b == 0:
+        break
+    dados.append(a)
+    dados.append(b)
+    lista.append(dados.copy())
+    dados.clear()
+
+for coord in lista:
+    if coord[0] > 0 and coord[1] > 0:
+        print('primeiro')
+    elif coord[0] < 0 and coord[1] < 0:
+        print('terceiro')
+    elif coord[0] < 0 and coord[1] > 0:
+        print('segundo')
+    elif coord[0] > 0 and coord[1] < 0:
+        print('quarto')
