@@ -1,0 +1,20 @@
+O = int(input())
+lista = list()
+dados = list()
+for i in range(O):
+    a, b = input().split()
+    a, b = int(a), int(b)
+    if a % 2 == 0:
+        a += 1
+    dados.append(a)
+    dados.append(b)
+    lista.append(dados.copy())
+    dados.clear()
+
+
+for i in lista:
+    soma = 0
+    for v in range(i[1]):
+        soma += i[0]
+        i[0] += 2
+    print(soma)
