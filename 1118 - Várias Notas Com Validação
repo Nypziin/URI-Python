@@ -1,0 +1,18 @@
+lista = list()
+while True:
+    n = float(input())
+    if not 0 <= n <= 10:
+        print('nota invalida')
+        continue
+    else:
+        lista.append(n)
+
+    continuar = ''
+    if len(lista) == 2:
+        print(f'media = {sum(lista)/2:.2f}')
+        lista.clear()
+        continuar = input('novo calculo (1-sim 2-nao)\n')
+        while continuar not in '12':
+            continuar = input('novo calculo (1-sim 2-nao)\n')
+    if continuar == '2':
+        break
