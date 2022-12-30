@@ -1,0 +1,5 @@
+x = int(input())
+y = int(input())
+for n in range(min(x, y) + 1, max(x, y)):
+    if n % 5 == 2 or n % 5 == 3:
+        print(n)
