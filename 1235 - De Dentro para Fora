@@ -1,0 +1,27 @@
+n = int(input())
+for x in range(n):
+    primeira_parte = []
+    segunda_parte = []
+    decifrada = []
+    palavra = input()
+    
+    for y in range(len(palavra)):
+        if y < (len(palavra) / 2):
+            primeira_parte.append(palavra[y])
+        else:
+            segunda_parte.append(palavra[y])
+
+    primeira_parte.reverse()
+    segunda_parte.reverse()
+
+    for z in primeira_parte:
+        decifrada.append(z)
+
+    for z in segunda_parte:
+        decifrada.append(z)
+
+    for i in range(len(decifrada)):
+        if i == len(decifrada) - 1:
+            print(decifrada[i])
+        else:
+            print(decifrada[i], end='')
