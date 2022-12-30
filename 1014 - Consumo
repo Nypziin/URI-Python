@@ -1,0 +1,4 @@
+x = int(input())
+y = float(input())
+medio = x/y
+print(f'{medio:.3f} km/l')
