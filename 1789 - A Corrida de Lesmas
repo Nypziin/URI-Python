@@ -1,0 +1,17 @@
+while True:
+    try:
+        lista = []
+        L = int(input())
+        velo = input().split()
+        for i in velo:
+            lista.append(int(i))
+        if max(lista) < 10:
+            print(1)
+        elif max(lista) < 20:
+            print(2)
+        else:
+            print(3)
+        lista.clear()
+        
+    except EOFError:
+        break
