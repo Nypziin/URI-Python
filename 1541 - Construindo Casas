@@ -1,0 +1,8 @@
+while True:
+    entrada = input().split()
+    if entrada[0] == '0':
+        break
+    else:
+        a, b, c = int(entrada[0]), int(entrada[1]), int(entrada[2])
+        lado_terreno = (a * b * 100 / c) ** 0.5
+        print(int(lado_terreno))
