@@ -1,0 +1,14 @@
+salario = float(input())
+salarioinicial = salario
+idr = 0
+if 0 <= salario <= 2000:
+    print('Isento')
+elif 2000 < salario <= 3000:
+    idr = 0 * 2000 + 0.08 * (salario - 2000)
+elif salario <= 4500:
+    idr = 0 * 2000 + 0.08 * 1000 + 0.18 * (salario - 3000)
+elif salario > 4500:
+    idr = 0 * 2000 + 0.08 * 1000 + 0.18 * 1500 + 0.28 * (salario - 4500)
+
+if salarioinicial > 2000:
+    print(f'R$ {idr:.2f}')
