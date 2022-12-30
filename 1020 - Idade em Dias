@@ -1,0 +1,18 @@
+n = int(input())
+tempo = 365
+contano = contmes = 0
+while True:
+    if n >= tempo:
+        n -= tempo
+        if tempo == 365:
+            contano += 1
+        if tempo == 30:
+            contmes += 1
+    else:
+        if tempo == 365:
+            tempo = 30
+        elif tempo <= 30:
+            break
+print(f'{contano} ano(s)')
+print(f'{contmes} mes(es)')
+print(f'{n} dia(s)')
