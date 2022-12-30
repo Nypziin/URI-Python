@@ -1,0 +1,12 @@
+hi, mi, hf, mf = input().split()
+hi, mi, hf, mf = int(hi), int(mi), int(hf), int(mf)
+
+mi += hi * 60
+mf += hf * 60
+
+tempo = mf - mi
+
+if tempo <= 0:
+    tempo += 1440
+
+print(f'O JOGO DUROU {tempo//60} HORA(S) E {tempo%60} MINUTO(S)')
