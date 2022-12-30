@@ -1,0 +1,8 @@
+n = int(input(''))
+lista = [6, 2, 5, 5, 4, 5, 6, 3, 7, 6]
+for i in range(n):
+    soma = 0
+    numero = input()
+    for x in numero:
+        soma += lista[int(x)]
+    print(f'{soma} leds')
