@@ -1,0 +1,13 @@
+x = int(input())
+y = int(input())
+maior = max(x, y)
+menor = min(x, y)
+soma = 0
+for i in range(maior - menor):
+    menor += 1
+    if menor == maior:
+        break
+    if menor % 2 == 1:
+        soma += menor
+
+print(soma)
