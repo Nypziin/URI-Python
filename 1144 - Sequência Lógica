@@ -1,0 +1,43 @@
+n = int(input())
+coluna1 = 1
+
+coluna2_2 = 2
+coluna2_1 = 1
+cont = 0
+contcoluna2 = 0
+
+soma = 1
+
+contarr = 0
+coluna3_1 = 0
+coluna3_2 = 2
+contcoluna3 = 0
+for i in range(n * 2):
+
+    cont += 1
+    print(coluna1, end=' ')
+    if cont == 2:
+        coluna1 += 1
+        cont = 0
+#  ----------------------------------------------------------------------------
+    contcoluna2 += 1
+    if contcoluna2 == 2:
+        print(coluna2_2, end=' ')
+        contcoluna2 = 0
+        soma += 2
+        coluna2_2 += soma
+
+    elif contcoluna2 == 1:
+        coluna2_1 = coluna1 ** 2
+        print(coluna2_1, end=' ')
+#  -----------------------------------------------------------------------------
+    contcoluna3 += 1
+    if contcoluna3 == 2:
+        print(coluna3_2)
+        coluna3_2 = (coluna2_2 * coluna1) - contarr - 1
+        contarr += 1
+        contcoluna3 = 0
+
+    elif contcoluna3 == 1:
+        coluna3_1 = coluna2_1 * coluna1
+        print(coluna3_1)
