@@ -1,0 +1,19 @@
+conta = contg = contd = 0
+comb = 0
+while True:
+    comb = int(input())
+    if not 1 <= comb <= 4:
+        continue
+    if comb == 4:
+        break
+    if comb == 1:
+        conta += 1
+    elif comb == 2:
+        contg += 1
+    elif comb == 3:
+        contd += 1
+
+print('MUITO OBRIGADO')
+print(f'Alcool: {conta}')
+print(f'Gasolina: {contg}')
+print(f'Diesel: {contd}')
