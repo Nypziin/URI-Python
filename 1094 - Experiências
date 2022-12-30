@@ -1,0 +1,20 @@
+t = int(input())
+soma = totr = tots = totc = 0
+for i in range(t):
+    n, c = input().upper().split()
+    n, c = int(n), str(c)
+    soma += n
+    if c == 'R':
+        totr += n
+    elif c == 'S':
+        tots += n
+    elif c == 'C':
+        totc += n
+
+print(f'Total: {soma} cobaias')
+print(f'Total de coelhos: {totc}')
+print(f'Total de ratos: {totr}')
+print(f'Total de sapos: {tots}')
+print(f'Percentual de coelhos: {totc*100/soma:.2f} %')
+print(f'Percentual de ratos: {totr*100/soma:.2f} %')
+print(f'Percentual de sapos: {tots*100/soma:.2f} %')
