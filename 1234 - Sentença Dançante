@@ -1,0 +1,25 @@
+while True:
+    try:
+        entrada = input()
+        teste = 2
+        lista = []
+        for i in entrada:
+            if i != ' ':
+                if teste % 2 == 0:
+                    lista.append(i.upper())
+                else:
+                    lista.append(i.lower())
+
+                teste += 1
+
+            else:
+                lista.append(' ')
+
+        for i in range(len(lista)):
+            if i == len(lista) - 1:
+                print(lista[i])
+            else:
+                print(lista[i], end='')
+
+    except EOFError:
+        break
