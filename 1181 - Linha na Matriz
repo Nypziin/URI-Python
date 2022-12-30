@@ -1,0 +1,12 @@
+num = int(input())
+OP = input()
+linha = [], [], [], [], [], [], [], [], [], [], [], []
+for i in range(12):
+    for c in range(12):
+        n = float(input())
+        linha[i].append(n)
+
+if OP == 'S':
+    print(f'{sum(linha[num]):.1f}')
+elif OP == 'M':
+    print(f'{sum(linha[num])/12:.1f}')
