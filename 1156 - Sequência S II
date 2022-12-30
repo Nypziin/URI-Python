@@ -1,0 +1,10 @@
+S = 1
+I = 1
+R = 0
+A = 0
+while S <= 39:
+    R += S / I
+    I = I * 2
+    S += 2
+
+print(f'{R:.2f}')
