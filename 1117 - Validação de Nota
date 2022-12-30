@@ -1,0 +1,13 @@
+lista = list()
+while True:
+    n = float(input())
+    if not 0 <= n <= 10:
+        print('nota invalida')
+    else:
+        lista.append(n)
+
+    if len(lista) == 2:
+        break
+
+
+print(f'media = {sum(lista)/2:.2f}')
