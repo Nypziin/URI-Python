@@ -1,0 +1,28 @@
+conti = contg = conte = contgrenais = 0
+while True:
+    i, g = input().split()
+    i, g = int(i), int(g)
+    contgrenais += 1
+    if i > g:
+        conti += 1
+    elif g > i:
+        contg += 1
+    elif g == i:
+        conte += 1
+    continuar = input('Novo grenal (1-sim 2-nao)\n')
+    while continuar not in '12':
+        continuar = input('Novo grenal (1-sim 2-nao)\n')
+    if continuar == '2':
+        break
+
+
+print(f'{contgrenais} grenais')
+print(f'Inter:{conti}')
+print(f'Gremio:{contg}')
+print(f'Empates:{conte}')
+if conti == contg:
+    print('Nao houve vencedor')
+elif conti > contg:
+    print('Inter venceu mais')
+elif contg > conti:
+    print('Gremio venceu mais')
