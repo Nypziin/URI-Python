@@ -1,0 +1,15 @@
+c = int(input())
+lista = list()
+for i in range(c):
+    a, b = input().split()
+    a, b = int(a), int(b)
+    maxi = max(a, b)
+    mini = min(a, b)
+    soma = 0
+    for v in range(mini + 1, maxi):
+        if v % 2 == 1:
+            soma += v
+    lista.append(soma)
+
+for n in lista:
+    print(n)
