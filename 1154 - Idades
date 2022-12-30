@@ -1,0 +1,8 @@
+lista = list()
+idade = 0
+while idade >= 0:
+    idade = int(input())
+    if idade >= 0:
+        lista.append(idade)
+
+print(f'{sum(lista)/len(lista):.2f}')
