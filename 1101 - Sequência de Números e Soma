@@ -1,0 +1,27 @@
+dados = list()
+lista = list()
+while True:
+    a, b = input().split()
+    a, b = int(a), int(b)
+    if b <= 0 or a <= 0:
+        break
+    dados.append(a)
+    dados.append(b)
+    lista.append(dados.copy())
+    dados.clear()
+
+lista2 = list()
+for i in lista:
+    soma = 0
+    maior = max(i)
+    menor = min(i)
+    if maior == menor or menor + 1 == maior:
+        print('Sum=0')
+        continue
+    while menor <= maior:
+        lista2.append(menor)
+        soma += menor
+        menor += 1
+    print(*lista2, sep=' ', end=' ')
+    print(f'Sum={soma}')
+    lista2.clear()
