@@ -1,0 +1,9 @@
+x = int(input())
+lista = list()
+if x % 2 == 0:
+    lista = [x + 1, x + 3, x + 5, x + 7, x + 9, x + 11]
+else:
+    lista = [x, x + 2, x + 4, x + 6, x + 8, x + 10]
+
+for i in lista:
+    print(i)
