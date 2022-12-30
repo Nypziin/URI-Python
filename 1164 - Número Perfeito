@@ -1,0 +1,15 @@
+N = int(input())
+for i in range(N):
+    a = int(input())
+    total = soma = 0
+    if a == 1 or a == 3:
+        print(f'{a} nao eh perfeito')
+        continue
+    for c in range(a):
+        soma += c + 1
+        if soma == a:
+            print(f'{a} eh perfeito')
+            break
+        elif soma > a:
+            print(f'{a} nao eh perfeito')
+            break
