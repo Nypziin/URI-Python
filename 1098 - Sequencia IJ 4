@@ -1,0 +1,22 @@
+def wtf():
+    cont = 0
+    i = 0
+    j = 1
+    for n in range(0, 33):
+        if n < 3 or n >= 30:
+            print(f'I={i:.0f} J={j:.0f}')
+        else:
+            if j == 2.0 or j == 3.0 or j == 4.0 or i == 1.0:
+                print(f'I={i:.0f} J={j:.0f}')
+            else:
+                print(f'I={i:.1f} J={j:.1f}')
+        cont += 1
+        j += 1
+        if cont == 3:
+            i += 0.2
+            j -= 3
+            j += 0.2
+            cont = 0
+
+
+wtf()
