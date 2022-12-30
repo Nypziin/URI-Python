@@ -1,0 +1,11 @@
+a, b = input().split()
+a, b = int(a), int(b)
+hora = 0
+if a > b:
+    hora = (24 - a) + b
+elif b > a:
+    hora = b - a
+if a == b:
+    hora = 24
+
+print(f'O JOGO DUROU {hora} HORA(S)')
