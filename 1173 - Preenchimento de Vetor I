@@ -1,0 +1,9 @@
+N = int(input())
+lista = list()
+for i in range(10):
+    lista.append(N)
+    N *= 2
+
+for i, n in enumerate(lista):
+    print(f'N[{i}] = {n}')
+    
