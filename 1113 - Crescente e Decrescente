@@ -1,0 +1,13 @@
+lista = list()
+while True:
+    a, b = input().split()
+    a, b = int(a), int(b)
+    if a == b:
+        break
+    elif a > b:
+        lista.append('Decrescente')
+    else:
+        lista.append('Crescente')
+
+for i in lista:
+    print(i)
