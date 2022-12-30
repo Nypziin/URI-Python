@@ -1,0 +1,7 @@
+x = int(input())
+y = int(input())
+somatorio = 0
+for n in range(min(x, y), max(x, y) + 1):
+    if n % 13 != 0:
+        somatorio += n
+print(somatorio)
