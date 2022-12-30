@@ -1,0 +1,16 @@
+num = int(input())
+OP = input()
+linha = [], [], [], [], [], [], [], [], [], [], [], []
+for i in range(12):
+    for c in range(12):
+        n = float(input())
+        linha[i].append(n)
+
+soma = 0
+for i in range(12):
+    soma += linha[i][num]
+
+if OP == 'S':
+    print(f'{soma:.1f}')
+elif OP == 'M':
+    print(f'{soma/12:.1f}')
