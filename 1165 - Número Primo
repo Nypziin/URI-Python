@@ -1,0 +1,17 @@
+N = int(input())
+for i in range(N):
+    p = int(input())
+    cont = 1
+    primo = 0
+    for c in range(p):
+        cont += 1
+        if cont == p:
+            break
+        elif p % cont == 0:
+            primo += 1
+            break
+    
+    if primo >= 1:
+        print(f'{p} nao eh primo')
+    elif primo == 0:
+        print(f'{p} eh primo')
