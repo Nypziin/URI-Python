@@ -1,0 +1,11 @@
+n = int(input())
+nin = nout = 0
+for i in range(n):
+    n = float(input())
+    if 10 <= n <= 20:
+        nin += 1
+    else:
+        nout += 1
+
+print(f'{nin} in')
+print(f'{nout} out')
