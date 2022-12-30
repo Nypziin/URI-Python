@@ -1,0 +1,13 @@
+from math import sqrt, pow
+a, b, c = input().split()
+a, b, c = float(a), float(b), float(c)
+
+delta = pow(b, 2) - (4 * a * c)
+if a == 0.0 or delta < 0:
+    print(f'Impossivel calcular')
+else:
+    x1 = ((b * -1) + sqrt(delta))/(2 * a)
+    x2 = ((b * -1) - sqrt(delta))/(2 * a)
+
+    print(f'R1 = {x1:.5f}')
+    print(f'R2 = {x2:.5f}')
