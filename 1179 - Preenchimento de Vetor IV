@@ -1,0 +1,38 @@
+par = list()
+impar = list()
+for i in range(15):
+    n = int(input())
+    if n % 2 == 0:
+        par.append(n)
+    else:
+        impar.append(n)
+
+    if len(par) == 5:
+        for b, p in enumerate(par):
+            print(f'par[{b}] = {p}')
+            if b == 4:
+                par.clear()
+                break
+
+    if len(impar) == 5:
+        for s, imp in enumerate(impar):
+            print(f'impar[{s}] = {imp}')
+            if s == 4:
+                impar.clear()
+                break
+
+if len(impar) >= 0:
+    cont = 0
+    for ind, imp in enumerate(impar):
+        print(f'impar[{cont}] = {imp}')
+        cont += 1
+        if cont == 4:
+            cont = 0
+
+if len(par) >= 0:
+    cont = 0
+    for ind, p in enumerate(par):
+        print(f'par[{cont}] = {p}')
+        cont += 1
+        if cont == 4:
+            cont = 0
