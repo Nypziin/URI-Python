@@ -1,0 +1,12 @@
+N = int(input())
+i = AA = R = 0
+A = 1
+while i < N:
+    if i == N - 1:
+        print(R, end='\n')
+    else:
+        print(R, end=' ')
+    AA = A
+    A = R
+    R = AA + A
+    i += 1
