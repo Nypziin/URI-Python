@@ -1,0 +1,14 @@
+a, b = input().split()
+a, b = int(a), int(b)
+total = 0
+if a == 1:
+    total = b * 4.00
+if a == 2:
+    total = b * 4.50
+if a == 3:
+    total = b * 5.00
+if a == 4:
+    total = b * 2.00
+if a == 5:
+    total = b * 1.50
+print(f'Total: R$ {total:.2f}')
