@@ -1,0 +1,10 @@
+lista = list()
+while True:
+    N = int(input())
+    lista.append(N)
+    if len(lista) == 20:
+        break
+
+lista.reverse()
+for i, n in enumerate(lista):
+    print(f'N[{i}] = {n}')
