@@ -1,0 +1,9 @@
+lista = list()
+for i in range(10):
+    a = int(input())
+    lista.append(a)
+
+for i, n in enumerate(lista):
+    if n <= 0:
+        n = 1
+    print(f'X[{i}] = {n}')
