@@ -1,0 +1,6 @@
+nome = input('')
+salario = float(input(''))
+total = float(input(''))
+comissao = (15/100) * total
+resposta = comissao + salario
+print(f'TOTAL = R$ {resposta:.2f}')
