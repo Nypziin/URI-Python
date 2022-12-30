@@ -1,0 +1,40 @@
+a, diai = input().split()
+a, diai = str(a), int(diai)
+hi, mi, si = input().split(':')
+hi, mi, si = int(hi), int(mi), int(si)
+
+b, diaf = input().split()
+b, diaf = str(b), int(diaf)
+hf, mf, sf = input().split(':')
+hf, mf, sf = int(hf), int(mf), int(sf)
+
+si = (mi * 60) + (hi * 3600) + (diai * 86400) + si
+sf = (mf * 60) + (hf * 3600) + (diaf * 86400) + sf
+
+tempo = sf - si
+dia = hora = minuto = 0
+
+if tempo // 86400 > 0:
+    dia = tempo // 86400
+    tempo -= (86400 * (tempo // 86400))
+else:
+    dia = 0
+
+if tempo // 3600 > 0:
+    hora = tempo // 3600
+    tempo -= (3600 * (tempo // 3600))
+else:
+    hora = 0
+
+if tempo // 60 > 0:
+    minuto = tempo // 60
+    tempo -= (60 * (tempo // 60))
+else:
+    minuto = 0
+
+segundo = tempo
+
+print(f'{dia} dia(s)')
+print(f'{hora} hora(s)')
+print(f'{minuto} minuto(s)')
+print(f'{segundo} segundo(s)')
