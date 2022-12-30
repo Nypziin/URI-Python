@@ -1,0 +1,10 @@
+lista = list()
+while True:
+    N = float(input())
+    lista.append(N)
+    if len(lista) == 100:
+        break
+
+for i, n in enumerate(lista):
+    if n <= 10:
+        print(f'A[{i}] = {n}')
