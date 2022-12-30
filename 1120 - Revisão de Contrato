@@ -1,0 +1,12 @@
+while True:
+    a, b = input().split()
+    a, b = a, b
+    if a == '0' and b == '0':
+        break
+    texto = ''
+    for x in b:
+        if b.count(a) == len(b):
+            texto += '0'
+        if a != x:
+            texto += x
+    print(int(texto))
