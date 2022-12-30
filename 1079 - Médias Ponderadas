@@ -1,0 +1,14 @@
+n = int(input())
+dados = []
+lista = []
+for i in range(0, n):
+    a, b, c = input().split()
+    a, b, c = float(a), float(b), float(c)
+    dados.append(a)
+    dados.append(b)
+    dados.append(c)
+    lista.append(dados.copy())
+    dados.clear()
+
+for n in lista:
+    print(f'{((n[0] * 2) + (n[1] * 3) + (n[2] * 5)) / 10:.1f}')
