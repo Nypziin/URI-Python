@@ -1,0 +1,26 @@
+n = int(input())
+lista = list()
+for i in range(n):
+    x = int(input())
+    lista.append(x)
+
+for x in lista:
+    if x == 0:
+        print('NULL')
+    else:
+        if x % 2 == 0 and x > 0:
+            print('EVEN POSITIVE')
+        elif x % 2 == 1 and x > 0:
+            print('ODD POSITIVE')
+        elif x % 2 == 0 and x < 0:
+            print('EVEN NEGATIVE')
+        elif x % 2 == 1 and x < 0:
+            print('ODD NEGATIVE')
+        elif x % 2 == 0:
+            print('EVEN')
+        elif x % 2 == 1:
+            print('ODD')
+        elif x > 0:
+            print('POSITIVE')
+        elif x < 0:
+            print('NEGATIVE')
