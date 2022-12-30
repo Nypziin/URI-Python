@@ -1,0 +1,12 @@
+X = int(input())
+Z = int(input())
+while Z <= X:
+    Z = int(input())
+
+Resp = 0
+i = 0
+while Resp < Z:
+    Resp += X + i
+    i += 1
+
+print(i)
