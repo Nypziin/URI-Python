@@ -1,0 +1,26 @@
+a, b, c, d = input().split()
+a, b, c, d = float(a), float(b), float(c), float(d)
+
+a = a * 2
+b = b * 3
+c = c * 4
+d = d * 1
+media = (a + b + c + d) / 10
+
+if media >= 7.0:
+    print(f'Media: {media:.1f}')
+    print('Aluno aprovado.')
+if media < 5:
+    print(f'Media: {media:.1f}')
+    print('Aluno reprovado.')
+if 5 <= media <= 6.9:
+    print(f'Media: {media:.1f}')
+    print('Aluno em exame.')
+    e = float(input())
+    print(f'Nota do exame: {e:.1f}')
+    mediaexame = (media + e) / 2
+    if mediaexame >= 5:
+        print('Aluno aprovado.')
+    else:
+        print('Aluno reprovado.')
+    print(f'Media final: {mediaexame:.1f}')
