@@ -1,0 +1,14 @@
+T = int(input())
+for i in range(T):
+    N = int(input())
+    Ant = F = cont = 0
+    Prox = 1
+    if N == 0:
+        print(f'Fib(0) = 0')
+        continue
+    for c in range(N):
+        Ant = Prox
+        Prox = F
+        F = Ant + Prox
+        cont += 1
+    print(f'Fib({cont}) = {F}')
