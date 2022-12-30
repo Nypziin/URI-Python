@@ -1,0 +1,4 @@
+tempo = int(input())
+velomedia = int(input())
+dist = (tempo * velomedia) / 12
+print(f'{dist:.3f}')
