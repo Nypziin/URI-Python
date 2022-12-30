@@ -1,0 +1,33 @@
+salario = float(input())
+salarioinicial = salario
+reajuste = percentual = 0
+
+if 0 <= salario <= 400:
+    percentual = 15
+    reajuste = 15 / 100 * salario
+    salario += reajuste
+
+elif salario <= 800:
+    percentual = 12
+    reajuste = 12 / 100 * salario
+    salario += reajuste
+
+elif salario <= 1200:
+    percentual = 10
+    reajuste = 10 / 100 * salario
+    salario += reajuste
+
+elif salario <= 2000:
+    percentual = 7
+    reajuste = 7 / 100 * salario
+    salario += reajuste
+
+elif salario > 2000:
+    percentual = 4
+    reajuste = 4 / 100 * salario
+    salario += reajuste
+
+
+print(f'Novo salario: {salario:.2f}')
+print(f'Reajuste ganho: {reajuste:.2f}')
+print(f'Em percentual: {percentual} %')
