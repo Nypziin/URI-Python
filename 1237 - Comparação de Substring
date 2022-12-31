@@ -1,0 +1,24 @@
+while True:
+    try:
+        string1 = input()
+        string2 = input()
+
+        maior_string = string1 if string1 >= string2 else string2
+        menor_string = string1 if string1 < string2 else string2
+
+        tamanho = len(maior_string)
+        maior = 0
+        for y in range(tamanho):
+            for x in range(y + 1, tamanho + 1):
+                if maior_string[y:x] in menor_string:
+                    if y == 0:
+                        maior = abs(x - y)
+                    else:
+                        if abs(x - y) > maior:
+                            maior = abs(x - y)
+
+        print(maior)
+
+    except EOFError:
+        break
+        
