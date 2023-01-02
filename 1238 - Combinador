@@ -1,0 +1,19 @@
+n = int(input())
+for i in range(n):
+    a, b = input().split()
+    menor = a if len(a) < len(b) else b
+    maior = a if len(a) >= len(b) else b
+    maior_lista = a[::] if len(a) >= len(b) else b[::]
+
+    lista = []
+    for x in range(len(menor)):
+        lista.append(a[x])
+        lista.append(b[x])
+
+    for x in range(len(menor), len(maior)):
+        lista.append(maior_lista[x])
+
+    for y in range(len(lista)):
+        print(lista[y], end='')
+
+    print()
