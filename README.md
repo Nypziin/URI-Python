@@ -1,3 +1,3 @@
 # URI-Python
 
-Thats are the exercises I did on beecrowd :)
+These are the exercises I did on beecrowd :)
